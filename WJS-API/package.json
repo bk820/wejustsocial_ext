@@ -1,0 +1,39 @@
+{
+  "name": "wsl-api",
+  "version": "1.0.0",
+  "description": "We Just Social API",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./",
+    "start": "node index.js",
+    "dev": "sh services.sh && nodemon index.js --exec \"npm run lint && node\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/smartflowlabs/wjs-api.git"
+  },
+  "keywords": [
+    "wjs",
+    "wejustsocial",
+    "cerberus",
+    "smartflowlabs",
+    "api"
+  ],
+  "author": "Sebastien Lamanna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/smartflowlabs/wjs-api/issues"
+  },
+  "homepage": "https://gitlab.com/smartflowlabs/wjs-api#readme",
+  "dependencies": {
+    "aws-sdk": "^2.379.0",
+    "cerberus-api": "file:cerberus-api",
+    "dotenv": "^6.2.0",
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}

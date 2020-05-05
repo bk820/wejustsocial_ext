@@ -1,0 +1,3 @@
+[submodule "cerberus-api"]
+	path = cerberus-api
+	url = git@gitlab.com:smartflowlabs/cerberus-api.git

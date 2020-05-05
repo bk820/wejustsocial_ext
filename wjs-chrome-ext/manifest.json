@@ -1,0 +1,44 @@
+{
+	"manifest_version": 2,
+
+	"name": "WeJustSocial Official Extension",
+	"description": "This extension is needed with WeJustSocial to automate actions on Instagram",
+	"version": "0.1",
+
+	"browser_action": {
+		"default_icon": "logo.png"
+	},
+	"permissions": [
+		"storage",
+		"tabs"
+	],
+	"background": {
+		"scripts": [
+			"common/event_bus.js",
+			"common/chrome_bus.js",
+			"common/utils.js",
+			"background/constants.js",
+			"background/helpers/storage.js",
+			"background/helpers/request.js",
+			"background/helpers/bot.js",
+			"background/services/cerberus.js",
+			"background/index.js"
+		]
+	},
+	"content_scripts": [
+    {
+			"matches": ["https://www.instagram.com/*"],
+			"run_at": "document_idle",
+      "css": ["content/style.css"],
+      "js": [
+				"common/event_bus.js",
+				"common/chrome_bus.js",
+				"common/utils.js",
+				"content/constants.js",
+				"content/helpers/widget.js",
+				"content/helpers/bot.js",
+				"content/index.js"
+			]
+    }
+  ]
+}

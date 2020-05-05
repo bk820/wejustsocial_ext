@@ -1,0 +1,9 @@
+# Node modules and Mac Data Store
+.DS_Store
+node_modules/
+
+# Environment file
+.env
+
+# Local certificates folder
+.certs

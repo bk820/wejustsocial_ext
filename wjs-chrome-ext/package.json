@@ -1,0 +1,21 @@
+{
+  "name": "wjs-bot",
+  "version": "0.0.1",
+  "description": "WeJustSocial client-side bot",
+  "main": "index.js",
+  "scripts": {
+		"lint": "eslint ./",
+    "test": "npm run lint"
+	},
+	"repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/smartflowlabs/wjs-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3"
+  }
+}

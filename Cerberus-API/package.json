@@ -1,0 +1,51 @@
+{
+  "name": "cerberus-api",
+  "version": "0.3.5",
+  "description": "Core API for the Cerberus environment\"",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./",
+    "start": "node dev.js",
+    "dev": "nodemon dev.js --exec \"npm run lint && node\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com:smartflowlabs/cerberus-api.git"
+  },
+  "keywords": [
+    "cerberus",
+    "api",
+    "smartflowlabs"
+  ],
+  "author": "Sebastien Lamanna",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "connect-roles": "^3.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^6.1.0",
+    "dotenv-extended": "^2.3.0",
+    "express": "^4.16.3",
+    "express-http-to-https": "^1.1.4",
+    "express-prettify": "^0.1.0",
+    "ioredis": "^4.0.0",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.11",
+    "method-override": "^3.0.0",
+    "moment": "^2.22.2",
+    "mongodb": "^3.1.6",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "pluralize": "^7.0.0",
+    "redlock": "^3.1.2",
+    "validator": "^10.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
