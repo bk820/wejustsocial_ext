@@ -29,7 +29,7 @@
     "aws-sdk": "^2.379.0",
     "cerberus-api": "file:cerberus-api",
     "dotenv": "^6.2.0",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.19"
   },
   "devDependencies": {
     "eslint": "^5.10.0",
